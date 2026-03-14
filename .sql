@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS funcionarios;
 CREATE TABLE funcionarios (
     id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
-    pin VARCHAR(255) NULL,
+    pin VARCHAR(5) NULL,
     identificador VARCHAR(100) NOT NULL UNIQUE,
     tipo_identificador ENUM('CPF', 'MATRICULA', 'OUTRO') NOT NULL,
     created_at TIMESTAMP NULL,
