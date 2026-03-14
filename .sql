@@ -23,12 +23,7 @@ CREATE TABLE administradores (
     updated_at TIMESTAMP NULL
 );
 
-CREATE TABLE terminal_acessos (
-    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    tipo ENUM('abertura','fechamento') NOT NULL,
-    created_at TIMESTAMP NULL,
-    updated_at TIMESTAMP NULL
-);
+
 
 CREATE TABLE pontos (
     id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
